@@ -1,14 +1,15 @@
-// TODO: Include packages needed for this application
+// Include needed packages
+
 const generateMarkdown =require("./utils/generateMarkdown.js");
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-// TODO: Create an array of questions for user input
+// Start of code for questions required for README
 const questions = [ 
     {
         type: "input",
         name: "title",
-        message: "Application title?"
+        message: "What is the title of the Application?"
     },
 
     {
@@ -23,22 +24,16 @@ const questions = [
         message: "Enter the name of your application Github repository."
     },
 
-    {
-        type: "input",
-        name: "description",
-        message: "Enter a brief description of your application."
-    },
-    
    {
         type: "input",
         name: "description",
-        message: "Enter a brief description of your application."
+        message: "Briefly describe your application."
     },
     
     {
         type: "input",
         name: "documentation",
-        message: "Describe the installation process and operating instructions."
+        message: "Describe the installation process and intructions."
     },
     
     {
@@ -50,7 +45,7 @@ const questions = [
     {
         type: "input",
         name: "screenshot",
-        message: "please enter relative path for your screenshot image."
+        message: "please enter the relative path for your screenshot image."
     },
 
     {
@@ -67,7 +62,7 @@ const questions = [
 
     {
         type: "list",
-        message: "what license are you using? ",
+        message: "what license are you using?",
         name: "license",
         choices: ["AAL", "ISC", "MIT", "NTP", "W3C"]
     },
@@ -76,19 +71,20 @@ const questions = [
     {
         type: "input",
         name: "testing",
-        message: "What is the process used to test this application?"
+        message: "What process is used to test this application?"
     },
     
   
     {
         type: "input",
         name: "email",
-        message: "Enter your email address."
+        message: "Please enter your email address."
     }
         
     ];
+// End of questions code
 
-// TODO: Create a function to initialize app
+// Initialize the Application
 function init() {
     inquirer.prompt(questions).then(function(userInput) {
         
@@ -100,7 +96,7 @@ function init() {
                 console.log(err)
             }
             else {
-                console.log('Look at your spiffy new README!')
+                console.log('README has been generated')
             }
         })
     },

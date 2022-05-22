@@ -1,5 +1,6 @@
+//Create the README
 function generateMarkdown(data) {
-
+//Information returned from github, includes table of contents + documentation + Usage + Acknowledgements + License + Contact Me section.
    return `# ${data.title}
    ![badge](https://github.com/${data.github}/${data.repo})
    <br> 
@@ -16,7 +17,7 @@ function generateMarkdown(data) {
    ## Description
    
     ${data.description}
-  
+
    ## Table of Contents
    - [Description](#description)
    - [Documentation](#documentation)
