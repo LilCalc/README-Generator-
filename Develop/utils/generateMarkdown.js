@@ -2,7 +2,7 @@
 function generateMarkdown(data) {
 //Information returned from github, includes table of contents + documentation + Usage + Acknowledgements + License + Contact Me section.
    return `# ${data.title}
-   ![badge](https://github.com/${data.github}/${data.repo})
+   ![badge](https://img.shields.io/github/languages/top/${data.github}/${data.repo})
    <br> 
    ![badge](https://img.shields.io/github/languages/count/${data.github}/${data.repo})
    <br>
