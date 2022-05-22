@@ -49,8 +49,8 @@ https://user-images.githubusercontent.com/101202962/169707322-159c19ec-c393-4aef
    Includes badges showing the primary language, and license used.
    
    # Acknowledgements
-   Noah Savino
-   KU Coding Bootcamp
+   - Noah Savino
+   - KU Coding Bootcamp
      
    ## License
    ![badge](https://img.shields.io/badge/license-MIT-important)
